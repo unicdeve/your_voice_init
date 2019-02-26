@@ -16,13 +16,13 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
   <!-- Bootstrap CDN and external CSS -->
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
   <link rel="stylesheet" href="../css/style.css">
 
   </head>
   <body>
     <!-- Top Bar -->
-  <section id="top-bar" class="py-3">
+    <section id="top-bar" class="py-3">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-2">
@@ -54,7 +54,7 @@
 
     <!-- Header Section -->
     <header id="navbar-section">
-      <nav class="navbar navbar-expand-lg text-white bg-dark navbar-dark" id="mainNav">
+      <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="../image/logo.jpg" class="logo" alt="Your Voice Initiative">
@@ -66,7 +66,7 @@
           <div class="collapse navbar-collapse text-white" id="navbarText">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
               </li>
     
               <li class="nav-item">
@@ -74,11 +74,11 @@
               </li>
     
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
     
               <li class="nav-item">
-                <a class="nav-link" href="#">Our Acitivities</a>
+                <a class="nav-link" href="#ourActivities">Our Acitivities</a>
               </li>
     
               <li class="nav-item">
@@ -86,11 +86,11 @@
               </li>
     
               <li class="nav-item">
-                <a class="nav-link" href="#">Share Your Story</a>
+                <a class="nav-link" href="#yourstory">Share Your Story</a>
               </li>
 
               <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
+                  <a class="nav-link" href="../blog/index.html">Blog</a>
                 </li>
             </ul>
         </div>
@@ -100,7 +100,7 @@
     <section id="carosel-section" class="mt-4">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-7">
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="500">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -112,15 +112,15 @@
                   </div>
                   
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="../image/children.jpg" alt="Second slide">
+                    <img class="d-block w-100 img-responsive" src="../image/children.jpg" alt="Second slide">
                   </div>
         
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="../image/pics4.jpg" alt="Third slide">
+                    <img class="d-block w-100 img-responsive" src="../image/pics4.jpg" alt="Third slide" >
                   </div>
     
                   <div class="carousel-item">
-                      <img class="d-block w-100" src="../image/IMG-20190216-WA0027.jpg" alt="Third slide">
+                      <img class="d-block w-100 img-responsive" src="../image/legs.jpg" alt="Fourth slide">
                     </div>
                 </div>
         
@@ -137,12 +137,12 @@
         </div>
         <!-- SideBar -->
         <!-- Vision and Mission -->
-        <div class="col-md-4">
+        <div class="col-md-5">
           <div class="row">
             <div class="col-md-12">
-              <div class="card text-white bg-dark mb-2">
+              <div class="card text-white mb-2" id="card">
                 <div class="card-body text-center">
-                    <h2 class="card-title text-muted">YOUR VOICE INITIATIVE</h2>
+                    <h2 class="card-title">YOUR VOICE INITIATIVE</h2>
                     <p class="card-text">is a Youth Led Non-Governmental Organization working to end all forms of Sexual abuse through Advocacy, Awareness and Education while providing prevention mechanisms through life skill approach.</p>
                     <p class="card-text">It is a platform to create awareness about sexual abuse (such as Child Molestation, Child Sexual Abuse, Rape, Sexual Violence, Female Genital Mutilation, Child Marriage, Gender Based Violence, Marital abuse etc.) in the country. It is an avenue for victims to share their stories so others can learn.</p>
                     <p class="card-text">Your Voice Initiative is also a support group that encourages victims to voice out and not shy away.</p>
@@ -153,9 +153,9 @@
 
           <div class="row">
             <div class="col-md-12">
-              <div class="card text-white bg-dark mb-2">
+              <div class="card text-white mb-2" id="card">
                 <div class="card-body text-center">
-                    <h2 class="card-title text-muted">MISSION</h2>
+                    <h2 class="card-title">MISSION</h2>
                     <p class="card-text">To create a society that has zero tolerance for sexual and other related abuse through awareness programs and education on the subject matter.</p>
                 </div>
               </div>
@@ -164,9 +164,9 @@
 
           <div class="row">
             <div class="col-md-12">
-              <div class="card text-white bg-dark mb-2">
+              <div class="card text-white mb-2" id="card">
                 <div class="card-body text-center">
-                    <h2 class="card-title text-muted">VISION</h2>
+                    <h2 class="card-title">VISION</h2>
                     <p class="card-text"> To give victims of sexual and other related abuse a platform to share their stories. To be a foremost support group to survivors of abuse and to ensure that such cases are reported and perpetrators duly punished. To be a foremost Advocacy group against Sexual abuse</p>
                 </div>
               </div>
@@ -178,13 +178,95 @@
       </div>
     </section>
 
-    <!-- <img src="../image/children.jpg" class="rounded-circle img-fluid" alt=""> -->
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container contact-container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Contact Us</h2>
+            <h3 class="section-subheading">Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactForm">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="Your Message *" required="required"></textarea>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <button class="btn btn-secondary btn-lg text-uppercase" type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Showcase -->
-    <section id="services" class="py-5">
-      
+  <!-- Share your story -->
+  <section id="yourstory" class="">
+    <div class="container yourstory-container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Share Your Story</h2>
+          <h3 class="section-subheading">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" id="name" type="text" placeholder="Your Name (optional)">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="location" type="text" placeholder="Your Location *">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" type="email" placeholder="Your Email (optional)" required="required">
+                </div>
+                <div class="form-group">
+                  <select name="gender" id="" class="form-control">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="prefer_not">Prefer not to answer</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" id="message" placeholder="Your Message *" required="required"></textarea>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <button class="btn btn-secondary btn-lg text-uppercase" type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
+    <!-- Activities -->
+    <section id="ourActivities" class="py-5">
       <div class="container">
           <h1 class="text-center my-3">OUR ACTIVITIES</h1>
         <div class="row text-center">
@@ -208,13 +290,13 @@
             <div class="card-body">
               <h3 class="card-title"><i class="fas fa-dove mr-2"></i>OFFLINE</i></h3>
               <p class="card-text">Here are some of our online acitivities</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#" class="card-link">Community Outreaches</a></li>
+                <li class="list-group-item"><a href="#" class="card-link">Primary School Visitation</a></li>
+                <li class="list-group-item"><a href="#" class="card-link">Secondary School Visitation</a></li>
+                <li class="list-group-item"><a href="#" class="card-link">Ophanage Outreaches</a></li>
+              </ul>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><a href="#" class="card-link">Community Outreaches</a></li>
-              <li class="list-group-item"><a href="#" class="card-link">Primary School Visitation</a></li>
-              <li class="list-group-item"><a href="#" class="card-link">Secondary School Visitation</a></li>
-              <li class="list-group-item"><a href="#" class="card-link">Ophanage Outreaches</a></li>
-            </ul>
           </div>
 
           <div class="col-md-4 card text-white bg-dark">
@@ -266,7 +348,7 @@
                   </ul>
                 </div>
                 <div class="col-md-4">
-                  <ul class="list-inline quicklinks">
+                  <ul class="list-inline">
                     <li class="list-inline-item">
                       <a href="#">Privacy Policy</a>
                     </li>

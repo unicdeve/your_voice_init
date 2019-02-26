@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- Top Bar -->
-  <section id="top-bar" class="py-3">
+    <section id="top-bar" class="py-3">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-2">
@@ -54,7 +54,7 @@
 
     <!-- Header Section -->
     <header id="navbar-section">
-      <nav class="navbar navbar-expand-lg text-white navbar-dark sticky-top" id="mainNav">
+      <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="../image/logo.jpg" class="logo" alt="Your Voice Initiative">
@@ -74,11 +74,11 @@
               </li>
     
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
     
               <li class="nav-item">
-                <a class="nav-link" href="#">Our Acitivities</a>
+                <a class="nav-link" href="#ourActivities">Our Acitivities</a>
               </li>
     
               <li class="nav-item">
@@ -97,110 +97,95 @@
       </nav>
     </header>
 
-    <section id="showcase-inner" class="py-5 text-white mt-4">
-        <div class="container">
-            <div class="row text-center">
-            <div class="col-md-12">
-                <h1 class="display-4">About Your Voice Initiative</h1>
-                <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
-            </div>
-            </div>
+  <!-- Share your story -->
+  <section id="yourstory" class="">
+    <div class="container yourstory-container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Share Your Story</h2>
+          <h3 class="section-subheading">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
-    </section>
-
-    <section id="carosel-section" class="mt-4">
-      <div class="container-fluid">      
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card text-white mb-2" id="card">
-                <div class="card-body text-center">
-                    <h2 class="card-title">YOUR VOICE INITIATIVE</h2>
-                    <p class="card-text">is a Youth Led Non-Governmental Organization working to end all forms of Sexual abuse through Advocacy, Awareness and Education while providing prevention mechanisms through life skill approach.</p>
-                    <p class="card-text">It is a platform to create awareness about sexual abuse (such as Child Molestation, Child Sexual Abuse, Rape, Sexual Violence, Female Genital Mutilation, Child Marriage, Gender Based Violence, Marital abuse etc.) in the country. It is an avenue for victims to share their stories so others can learn.</p>
-                    <p class="card-text">Your Voice Initiative is also a support group that encourages victims to voice out and not shy away.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card text-white mb-2" id="card">
-                <div class="card-body text-center">
-                    <h2 class="card-title">MISSION</h2>
-                    <p class="card-text">To create a society that has zero tolerance for sexual and other related abuse through awareness programs and education on the subject matter.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card text-white mb-2" id="card">
-                <div class="card-body text-center">
-                    <h2 class="card-title">VISION</h2>
-                    <p class="card-text"> To give victims of sexual and other related abuse a platform to share their stories. To be a foremost support group to survivors of abuse and to ensure that such cases are reported and perpetrators duly punished. To be a foremost Advocacy group against Sexual abuse</p>
-                </div>
-              </div>
-            </div>
-          </div>
       </div>
-    </section>
-
-    <!-- Work -->
-    <section id="work" class="bg-dark text-white text-center">
-        <h2 class="display-4">We Work For Humanity</h2>
-        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit aperiam, unde aliquid at similique!</h4>
-        <hr>
-        <a href="home.html" class="btn btn-secondary text-white btn-lg">View Our Gallery</a>
-    </section>
-
-    <!-- Volunteer -->
-  <section id="volunteer" class="py-5">
-        <div class="container">
-          <h2 class="text-center">Our Voluteers</h2>
-          <div class="row text-center">
-            <div class="col-md-4">
-              <img src="" alt="" class="rounded-circle mb-3">
-              <h4>Kyle Brown</h4>
-              <p class="text-success">
-                <i class="fas fa-award text-success mb-3"></i> Voluteers</p>
-              <hr>
-              <p>
-                <i class="fas fa-phone"></i> (555)-555-5555</p>
-              <p>
-                <i class="fas fa-envelope-open"></i> kyle@btrealestate.co</p>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" id="name" type="text" placeholder="Your Name (optional)">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="location" type="text" placeholder="Your Location *">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" type="email" placeholder="Your Email (optional)" required="required">
+                </div>
+                <div class="form-group">
+                  <select name="gender" id="" class="form-control">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="prefer_not">Prefer not to answer</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" id="message" placeholder="Your Message *" required="required"></textarea>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <button class="btn btn-secondary btn-lg text-uppercase" type="submit">Send Message</button>
+              </div>
             </div>
-    
-            <div class="col-md-4">
-              <img src="assets/img/Voluteerss/mark.jpg" alt="" class="rounded-circle mb-3">
-              <h4>Mark Hudson</h4>
-              <p class="text-success">Voluteers</p>
-              <hr>
-              <p>
-                <i class="fas fa-phone"></i> (444)-444-4444</p>
-              <p>
-                <i class="fas fa-envelope-open"></i> mark@btrealestate.co</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+        <div class="container contact-container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">Contact Us</h2>
+              <h3 class="section-subheading">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
-    
-            <div class="col-md-4">
-              <img src="assets/img/Voluteerss/jenny.jpg" alt="" class="rounded-circle mb-3">
-              <h4>Jenny Johnson</h4>
-              <p class="text-success">Voluteers</p>
-              <hr>
-              <p>
-                <i class="fas fa-phone"></i> (333)-333-3333</p>
-              <p>
-                <i class="fas fa-envelope-open"></i> jenny@btrealestate.co</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <form id="contactForm">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required">
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required">
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <textarea class="form-control" id="message" placeholder="Your Message *" required="required"></textarea>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-lg-12 text-center">
+                    <button class="btn btn-secondary btn-lg text-uppercase" type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
-
-
-    <!-- Showcase -->
-    <section id="services" class="py-5">
+    <!-- Activities -->
+    <section id="ourActivities" class="py-5">
       <div class="container">
           <h1 class="text-center my-3">OUR ACTIVITIES</h1>
         <div class="row text-center">
@@ -224,13 +209,13 @@
             <div class="card-body">
               <h3 class="card-title"><i class="fas fa-dove mr-2"></i>OFFLINE</i></h3>
               <p class="card-text">Here are some of our online acitivities</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#" class="card-link">Community Outreaches</a></li>
+                <li class="list-group-item"><a href="#" class="card-link">Primary School Visitation</a></li>
+                <li class="list-group-item"><a href="#" class="card-link">Secondary School Visitation</a></li>
+                <li class="list-group-item"><a href="#" class="card-link">Ophanage Outreaches</a></li>
+              </ul>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><a href="#" class="card-link">Community Outreaches</a></li>
-              <li class="list-group-item"><a href="#" class="card-link">Primary School Visitation</a></li>
-              <li class="list-group-item"><a href="#" class="card-link">Secondary School Visitation</a></li>
-              <li class="list-group-item"><a href="#" class="card-link">Ophanage Outreaches</a></li>
-            </ul>
           </div>
 
           <div class="col-md-4 card text-white bg-dark">
@@ -282,7 +267,7 @@
                   </ul>
                 </div>
                 <div class="col-md-4">
-                  <ul class="list-inline quicklinks">
+                  <ul class="list-inline">
                     <li class="list-inline-item">
                       <a href="#">Privacy Policy</a>
                     </li>

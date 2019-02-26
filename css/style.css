@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: #383B43;
+    --main-bg-color: #0092dd;
     --main-txt-color: blue; 
     --heading-h1-color: #50AEC4;
     --main-white: #fff;
@@ -9,13 +9,18 @@
 body {
   font-family: 'Peralta', cursive;
     font-size: 1.2rem;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
 }
 
 #mainNav {
   font-size: 1.1rem;
     font-family: 'Permanent Marker', cursive;
     background-color: var(--main-bg-color);
+    color: #000000;
+}
+
+.navbar>ul>a {
+  color: #000000;
 }
 
   #mainNav .navbar-toggler {
@@ -39,10 +44,20 @@ body {
     letter-spacing: 1px;
     font-family: 'Permanent Marker', cursive;
   }
+
+  #navbarText{
+    color: #ffffff;
+  }
   
   #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: var(--main-txt-color);
   }
+
+  .nav-link:hover, .nav-link:focus {
+    background-color: #72CE9C;
+    border-radius: 3px 10px;
+  }
+  
 
 /* Navigation */
 .logo {
@@ -66,7 +81,7 @@ body {
 .topbar-icon {
     font-size: 1.8rem;
     color: var(--main-bg-color);
-    padding: 3% 1%;
+    padding: 0% 1%;
 }
 
 /* Footer */
@@ -133,11 +148,20 @@ footer {
     }
   }
 
+  #card {
+    background-color: var(--main-bg-color)
+  }
 
 .card-text {
   font-family: 'Caveat Brush', cursive;
   font-size: 1.3rem;
 }
+
+.card-link {
+  color: #383B43;
+}
+
+
 
 .card-title {
   font-family: 'Peralta', cursive;
@@ -166,4 +190,86 @@ footer {
 
 .btn-secondary {
   background-color: var(--btn-secondary)
+}
+
+/* Contact */
+section#contact {
+  background-color: #212529;
+  background-image: url("../image/map-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 35rem;
+  margin: 3rem 0;
+}
+
+section#contact .section-heading {
+  color: #fff;
+}
+
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+  height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+  height: 248px;
+}
+
+section#contact .form-control:focus {
+  border-color: #fed136;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.contact-container {
+  padding: 58px 0px;
+}
+
+/* ShareYourStory */
+section#yourstory {
+  background-color: #212529;
+  background-image: url("../image/child.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+  margin: 3rem 0;
+}
+
+section#yourstory .section-heading {
+  color: #fff;
+}
+
+section#yourstory .form-group {
+  margin-bottom: 25px;
+}
+
+section#yourstory .form-group input,
+section#yourstory .form-group textarea {
+  padding: 20px;
+}
+
+section#yourstory .form-group input.form-control {
+  height: auto;
+}
+
+section#yourstory .form-group textarea.form-control {
+  height: 300px;
+}
+
+section#yourstory .form-control:focus {
+  border-color: #fed136;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.yourstory-container {
+  padding: 58px 0px;
 }
