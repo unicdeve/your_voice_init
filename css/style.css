@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: #0092dd;
+    --main-bg-color:rgba(255, 255, 255, 0.9);
     --main-txt-color: blue; 
     --heading-h1-color: #50AEC4;
     --main-white: #fff;
@@ -15,7 +15,7 @@ body {
 #mainNav {
   font-size: 1.1rem;
     font-family: 'Permanent Marker', cursive;
-    background-color: var(--main-bg-color);
+    /* background-color: var(--main-bg-color); */
     color: #000000;
 }
 
@@ -32,10 +32,10 @@ body {
     background-color: var(--main-txt-color);
     font-family: 'Permanent Marker', cursive;
   }
-  
-  #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: var(--main-txt-color);
-  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgba(8, 8, 8, 0.5);
+}
   
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
@@ -46,7 +46,7 @@ body {
   }
 
   #navbarText{
-    color: #ffffff;
+    color: #070707;
   }
   
   #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -61,7 +61,6 @@ body {
 
 /* Navigation */
 .logo {
-    font-weight: 900;
     width: 100px;
     height: 70px;
 }
@@ -73,14 +72,14 @@ body {
 
 .footer-icon {
     font-size: 3rem;
-    color: var(--main-white);
+    color: var(--btn-secondary);
     padding: 5% 3%;
     margin: 0 5%;
 }
 
 .topbar-icon {
     font-size: 1.8rem;
-    color: var(--main-bg-color);
+    color: var(--btn-secondary);
     padding: 0% 1%;
 }
 
@@ -149,22 +148,30 @@ footer {
   }
 
   #card {
-    background-color: var(--main-bg-color)
+    background-color: #939AA0
+  }
+
+  .card {
+    background-color: #625990;
+    box-shadow: 9px 9px 45px -8px rgba(0,0,0,0.75);
+    border-color: #5a34fc;
+    border-radius: 10px;
   }
 
 .card-text {
   font-family: 'Caveat Brush', cursive;
   font-size: 1.3rem;
+  color: #ffffff
 }
 
 .card-link {
-  color: #383B43;
+  color: #fff;
 }
-
 
 
 .card-title {
   font-family: 'Peralta', cursive;
+  color: #62CD91;
 }
 
 #showcase-inner {
@@ -235,8 +242,7 @@ section#contact .form-control:focus {
 
 /* ShareYourStory */
 section#yourstory {
-  background-color: #212529;
-  background-image: url("../image/child.jpg");
+  background-color: #7C858B;
   background-repeat: no-repeat;
   background-size: cover;
   height: 35rem;
@@ -272,4 +278,78 @@ section#yourstory .form-control:focus {
 
 .yourstory-container {
   padding: 58px 0px;
+}
+
+
+/* 5-Steps */
+#steps-5 {
+  background-color: #ffffff;
+  margin: 2rem;
+  padding: 2rem 0;
+}
+
+.section-title {
+  font-size: 3rem;
+  color: #625990
+}
+
+.carousel-steps-5 {
+  padding: 2% 20%;
+  color: #55544D;
+  text-align: center
+}
+
+.carousel-inner {
+  text-align: center
+}
+
+.carousel-item h3 {
+  font-size: 2rem;
+}
+
+
+/* % Steps */
+#steps-5 {
+  background-color: #62CD91;
+  margin: 3.2rem;
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 3rem;
+}
+
+.steps-carousel5 {
+  padding: 4% 15%;
+}
+
+.steps-carousel5 h3 {
+  font-size: 2.5rem;
+}
+
+.carousel-caption {
+  position: relative;
+  right: 50%;
+  bottom: 20px;
+  left: 0%;
+  color: #fff;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+/* Stay Upto Date */
+.uptoheader{
+  border-bottom: 3px solid #62CD91;
+  padding: 10px 5px;
+}
+
+.section-title-uptodate{
+  font-size: 3rem;
+  color: #62CD91
+}
+
+#upto-card {
+  background-color: #fff
 }
